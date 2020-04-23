@@ -3104,34 +3104,46 @@ package type P</description>
 </class>
 </classes>
 <parts>
-<part name="X1" library="con-tycoelectronics" deviceset="RJ45*2" device="-B" technology="-6L"/>
-<part name="IC1" library="atmel" deviceset="AT24C*" device="P"/>
-<part name="U$1" library="rtl8019as" deviceset="RTL8019AS" device=""/>
-<part name="IC3" library="v-reg" deviceset="78XXL" device=""/>
-<part name="J1" library="con-jack" deviceset="JACK-PLUG" device="0"/>
-<part name="X2" library="con-phoenix-mkds_5" deviceset="MKDS_5/3-" device="7,62"/>
-<part name="X3" library="con-subd" deviceset="F09" device="HP"/>
-<part name="IC4" library="maxim" deviceset="MAX232ECWE" device=""/>
+<part name="CON3" library="con-tycoelectronics" deviceset="RJ45*2" device="-B" technology="-6L"/>
+<part name="US4" library="atmel" deviceset="AT24C*" device="P"/>
+<part name="US5" library="rtl8019as" deviceset="RTL8019AS" device=""/>
+<part name="US3" library="v-reg" deviceset="78XXL" device=""/>
+<part name="CON1" library="con-jack" deviceset="JACK-PLUG" device="0"/>
+<part name="CON4A" library="con-phoenix-mkds_5" deviceset="MKDS_5/3-" device="7,62"/>
+<part name="CON2" library="con-subd" deviceset="F09" device="HP"/>
+<part name="US2" library="maxim" deviceset="MAX232ECWE" device=""/>
 <part name="RN1" library="resistor-sil" deviceset="G11R" device=""/>
-<part name="U$2" library="microchip-custom" deviceset="PIC18F*2_DIL" device=""/>
+<part name="US1" library="microchip-custom" deviceset="PIC18F*2_DIL" device=""/>
+<part name="CON4B" library="con-phoenix-mkds_5" deviceset="MKDS_5/3-" device="7,62"/>
+<part name="CON4C" library="con-phoenix-mkds_5" deviceset="MKDS_5/3-" device="7,62"/>
+<part name="CON4D" library="con-phoenix-mkds_5" deviceset="MKDS_5/3-" device="7,62"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="X1" gate="G$1" x="40.64" y="50.8"/>
-<instance part="IC1" gate="G$1" x="101.6" y="43.18"/>
-<instance part="U$1" gate="G$1" x="233.68" y="50.8"/>
-<instance part="IC3" gate="A" x="68.58" y="60.96"/>
-<instance part="J1" gate="G$1" x="81.28" y="78.74"/>
-<instance part="X2" gate="-1" x="15.24" y="27.94"/>
-<instance part="X2" gate="-2" x="15.24" y="22.86"/>
-<instance part="X2" gate="-3" x="15.24" y="17.78"/>
-<instance part="X3" gate="G$1" x="0" y="76.2"/>
-<instance part="IC4" gate="G$1" x="71.12" y="15.24"/>
+<instance part="CON3" gate="G$1" x="40.64" y="50.8"/>
+<instance part="US4" gate="G$1" x="101.6" y="43.18"/>
+<instance part="US5" gate="G$1" x="233.68" y="50.8"/>
+<instance part="US3" gate="A" x="68.58" y="60.96"/>
+<instance part="CON1" gate="G$1" x="81.28" y="78.74"/>
+<instance part="CON4A" gate="-1" x="15.24" y="27.94"/>
+<instance part="CON4A" gate="-2" x="15.24" y="22.86"/>
+<instance part="CON4A" gate="-3" x="15.24" y="17.78"/>
+<instance part="CON2" gate="G$1" x="0" y="76.2"/>
+<instance part="US2" gate="G$1" x="71.12" y="15.24"/>
 <instance part="RN1" gate="A" x="109.22" y="86.36"/>
-<instance part="U$2" gate="G$1" x="149.86" y="22.86"/>
+<instance part="US1" gate="G$1" x="149.86" y="22.86"/>
+<instance part="CON4B" gate="-1" x="-10.16" y="45.72"/>
+<instance part="CON4B" gate="-2" x="-10.16" y="40.64"/>
+<instance part="CON4B" gate="-3" x="-10.16" y="35.56"/>
+<instance part="CON4C" gate="-1" x="-27.94" y="22.86"/>
+<instance part="CON4C" gate="-2" x="-27.94" y="17.78"/>
+<instance part="CON4C" gate="-3" x="-27.94" y="12.7"/>
+<instance part="CON4D" gate="-1" x="-12.7" y="2.54"/>
+<instance part="CON4D" gate="-2" x="-12.7" y="-2.54"/>
+<instance part="CON4D" gate="-3" x="-12.7" y="-7.62"/>
 </instances>
 <busses>
 </busses>
