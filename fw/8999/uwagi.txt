@@ -1,0 +1,24 @@
+Uwagi do zamieszczonych materia³ów:
+
+Wœród materia³ów dodatkowych do projektów zamieszczane s¹ g³ównie pliki p³ytek drukowanych i pliki wynikowe programów do mikrokontrolera. Pliki te maj¹ ró¿ne rozszerzenia i obs³ugiwane s¹ tylko przez programy, w których zosta³y utworzone. Do niektórych projektów mog¹ byæ do³¹czone inne pliki m.in. takie jak pliki Ÿród³owe programów, aplikacje i ich Ÿród³a.
+
+Poni¿ej przedstawiono przyk³adowe rozszerzenia plików najczêœciej do³¹czanych do projektów.
+
+Pliki z rozszerzeniem PCB, PcbDoc, brd, dip s¹ plikami Ÿród³owymi p³ytek drukowanych.
+Przyk³adowe programy obs³uguj¹ce pliki:
+Pcb - PADS, ExpressPCB, EasyTrax, AutoTrax, Protel
+Brd - Eagle, KiCAD
+PcbDoc - Altium Designer
+Dip - DipTrace
+
+Uwaga! Przyk³adowo plik brd zaprojektowany w programie Eagle nie jest obs³ugiwany przez program KiCAD.
+
+Pliki z rozszerzeniem: gbr, gbw, gbx, pho, art, lgr, lgx, alp, dri, drl, drr, gbl, gbo, gbs, gko, gpi, gtl, gto, gtp, gts s¹ to gerbery plików PCB.
+
+Pliki hex i bin s¹ plikami wynikowymi powsta³ymi podczas kompilacji Ÿróde³ programów.
+
+Pliki z rozszerzeniem aps, mcp, bas, pde s¹ to projekty programów uruchamiane odpowiednio za pomoc¹ AVRStudio, MPlab, BascomAVR, Arduino.
+
+Pliki z rozszerzeniem bas, c, asm, cpp s¹ plikami Ÿród³owymi programów do mikrokontrolera. 
+
+W dodatkowych materia³ach mog¹ znajdowaæ pliki nie wymienione wy¿ej.
