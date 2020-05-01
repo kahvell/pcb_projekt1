@@ -8,21 +8,21 @@
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -65,6 +65,21 @@
 <hole x="96.52" y="76.2" drill="3.5"/>
 <hole x="96.52" y="3.81" drill="3.5"/>
 <hole x="3.81" y="3.81" drill="3.5"/>
+<rectangle x1="34.798" y1="3.683" x2="47.625" y2="14.097" layer="29"/>
+<text x="9.779" y="73.787" size="1.778" layer="25" font="vector" ratio="15" rot="R90">ACT</text>
+<text x="59.69" y="1.905" size="1.778" layer="25" font="vector" ratio="15" rot="R90">PROG</text>
+<text x="99.187" y="8.128" size="1.778" layer="25" font="vector" ratio="15" rot="R180">1</text>
+<text x="99.187" y="12.065" size="1.778" layer="25" font="vector" ratio="15" rot="R180">2</text>
+<text x="99.187" y="18.161" size="1.778" layer="25" font="vector" ratio="15" rot="R180">3</text>
+<text x="99.187" y="24.638" size="1.778" layer="25" font="vector" ratio="15" rot="R180">4</text>
+<text x="99.06" y="30.988" size="1.778" layer="25" font="vector" ratio="15" rot="R180">5</text>
+<text x="98.933" y="37.592" size="1.778" layer="25" font="vector" ratio="15" rot="R180">6</text>
+<text x="98.806" y="43.815" size="1.778" layer="25" font="vector" ratio="15" rot="R180">7</text>
+<text x="98.806" y="49.911" size="1.778" layer="25" font="vector" ratio="15" rot="R180">8</text>
+<text x="98.806" y="56.642" size="1.778" layer="25" font="vector" ratio="15" rot="R180">9</text>
+<text x="98.806" y="62.738" size="1.778" layer="25" font="vector" ratio="15" rot="R180">10</text>
+<text x="98.679" y="69.342" size="1.778" layer="25" font="vector" ratio="15" rot="R180">11</text>
+<text x="99.441" y="73.533" size="1.778" layer="25" font="vector" ratio="15" rot="R180">GND</text>
 </plain>
 <libraries>
 <library name="con-tycoelectronics">
@@ -2616,37 +2631,52 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="CON3" library="con-tycoelectronics" package="RJ45-SHIELD2" value="RJ45-6L2-B" x="8.89" y="63.5" rot="R270">
+<element name="CON3" library="con-tycoelectronics" package="RJ45-SHIELD2" value="RJ45-6L2-B" x="8.89" y="63.5" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="16R6096" x="-2.54" y="7.62" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="RJ45-6L2-B" x="-2.54" y="7.62" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="-2.54" y="7.62" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-2.54" y="7.62" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="22.733" y="65.913" size="1.778" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="11.43" y="69.215" size="1.778" layer="27" rot="R270"/>
 </element>
-<element name="US4" library="atmel" package="DIL08" value="AT24CP" x="62.23" y="69.85" rot="R90">
+<element name="US4" library="atmel" package="DIL08" value="AT24CP" x="62.23" y="69.85" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="03P2044" x="152.4" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="AT24C1024BW-SH-B" x="152.4" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="152.4" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1362646" x="152.4" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="62.611" y="77.5716" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="63.2206" y="66.04" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="US5" library="rtl8019as" package="RTL8019AS" value="RTL8019AS" x="39.37" y="36.83" rot="R90"/>
-<element name="US3" library="v-reg" package="78XXL" value="78L08" x="33.02" y="8.89" rot="R270"/>
-<element name="CON1" library="con-jack" package="SPC4077" value="" x="8.89" y="11.43">
+<element name="US5" library="rtl8019as" package="RTL8019AS" value="RTL8019AS" x="39.37" y="36.83" smashed="yes" rot="R90">
+<attribute name="VALUE" x="41.91" y="31.75" size="1.778" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="48.133" y="23.876" size="1.778" layer="25" font="vector" ratio="10"/>
+</element>
+<element name="US3" library="v-reg" package="78XXL" value="78L08" x="33.02" y="8.89" smashed="yes" rot="R270">
+<attribute name="NAME" x="49.784" y="8.382" size="1.778" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="35.56" y="12.827" size="1.778" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="CON1" library="con-jack" package="SPC4077" value="" x="8.89" y="11.43" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="50.8" y="-80.01" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="50.8" y="-80.01" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="50.8" y="-80.01" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="50.8" y="-80.01" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.477" y="16.764" size="1.778" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="-1.27" y="5.08" size="1.27" layer="27"/>
 </element>
-<element name="CON4A" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="11.43" rot="R90">
+<element name="CON4A" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="11.43" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="71C4092" x="163.83" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="1714968" x="163.83" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="FARNELL" x="163.83" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="3704695" x="163.83" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="81.28" y="1.905" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CON2" library="con-subd" package="F09HP" value="" x="11.43" y="36.83" rot="R90">
+<element name="CON2" library="con-subd" package="F09HP" value="" x="11.43" y="36.83" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="19.05" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="19.05" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="19.05" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="19.05" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="17.78" y="21.59" size="1.778" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="-2.54" y="31.75" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="US2" library="maxim" package="SO16L" value="MAX232A" x="21.59" y="38.1" rot="MR90">
 <attribute name="OC_NEWARK" value="67K4440" x="-69.85" y="101.6" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -2654,62 +2684,111 @@ design rules under a new name.</description>
 <attribute name="MF" value="MAXIM" x="-69.85" y="101.6" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="OC_FARNELL" value="9724435" x="-69.85" y="101.6" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="R13" library="resistor-sil" package="SIL12" value="11x10k" x="78.74" y="41.91" rot="R270">
+<element name="R13" library="resistor-sil" package="SIL12" value="11x10k" x="78.74" y="41.91" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="-25.4" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="-25.4" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="-25.4" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-25.4" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="77.851" y="25.781" size="1.778" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="80.01" y="49.53" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="US1" library="microchip-custom" package="DIL40" value="PIC18F2_DIL" x="66.04" y="35.56" rot="R90"/>
-<element name="CON4B" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="30.48" rot="R90">
+<element name="US1" library="microchip-custom" package="DIL40" value="PIC18F2_DIL" x="66.04" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="75.184" y="63.373" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="68.2752" y="13.97" size="1.778" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="CON4B" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="30.48" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="71C4092" x="163.83" y="80.01" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="1714968" x="163.83" y="80.01" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="FARNELL" x="163.83" y="80.01" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="3704695" x="163.83" y="80.01" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="81.28" y="20.955" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CON4C" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="49.53" rot="R90">
+<element name="CON4C" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="49.53" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="71C4092" x="163.83" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="1714968" x="163.83" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="FARNELL" x="163.83" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="3704695" x="163.83" y="123.19" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="81.28" y="40.005" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CON4D" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="68.58" rot="R90">
+<element name="CON4D" library="con-phoenix-mkds_5" package="MKDS_5/3-635" value="MKDS_5/3-6,35" x="86.36" y="68.58" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="71C4092" x="181.61" y="93.98" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="1714968" x="181.61" y="93.98" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="FARNELL" x="181.61" y="93.98" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="3704695" x="181.61" y="93.98" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="81.28" y="59.055" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="N1" library="trafo" package="DIP" value="YCL-20F001N" x="36.83" y="62.23" rot="R180"/>
+<element name="N1" library="trafo" package="DIP" value="YCL-20F001N" x="36.83" y="62.23" smashed="yes" rot="R180">
+<attribute name="NAME" x="46.99" y="55.88" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="46.99" y="69.85" size="1.524" layer="27" font="vector" ratio="10" rot="R180"/>
+</element>
 <element name="C9" library="resistor" package="C1206K" value="100n" x="21.971" y="19.177" rot="MR0"/>
 <element name="C12" library="resistor" package="C1206K" value="100n" x="37.338" y="69.596" rot="MR90"/>
-<element name="C19" library="resistor" package="C075-032X103" value="100n,400V" x="45.72" y="76.2" rot="R180"/>
-<element name="C20" library="resistor" package="C075-032X103" value="100n,400V" x="31.75" y="76.2" rot="R180"/>
-<element name="R7" library="resistor" package="M3216" value="200" x="23.749" y="42.037" rot="R270"/>
+<element name="C19" library="resistor" package="C075-032X103" value="100n,400V" x="45.72" y="76.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="50.546" y="73.533" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="50.546" y="79.248" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C20" library="resistor" package="C075-032X103" value="100n,400V" x="31.75" y="76.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.576" y="73.66" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="36.576" y="79.248" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R7" library="resistor" package="M3216" value="200" x="23.749" y="42.037" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.066" y="43.815" size="1.778" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="21.209" y="43.307" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="C11" library="resistor" package="C1206K" value="100n" x="22.86" y="73.66" rot="MR90"/>
 <element name="C10" library="resistor" package="C1206K" value="100n" x="20.701" y="34.544" rot="MR90"/>
 <element name="C8" library="resistor" package="C1206K" value="100n" x="21.59" y="41.91" rot="MR90"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4147" x="20.32" y="13.97" rot="R180"/>
-<element name="C1" library="resistor" package="TT2D5" value="100u" x="22.86" y="3.81" rot="R180"/>
-<element name="C3" library="resistor" package="TT2D5" value="220u" x="16.51" y="3.81"/>
+<element name="D1" library="diode" package="DO35-10" value="1N4147" x="20.32" y="13.97" smashed="yes" rot="R180">
+<attribute name="NAME" x="21.59" y="17.907" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="22.479" y="16.637" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C1" library="resistor" package="TT2D5" value="100u" x="22.86" y="3.81" smashed="yes" rot="R180">
+<attribute name="NAME" x="25.273" y="9.144" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="20.32" y="6.223" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C3" library="resistor" package="TT2D5" value="220u" x="16.51" y="3.81" smashed="yes">
+<attribute name="NAME" x="15.875" y="7.493" size="1.778" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="19.05" y="1.397" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="C2" library="resistor" package="C1206K" value="100n" x="24.511" y="16.51" rot="MR0"/>
 <element name="C17" library="resistor" package="C1206K" value="100N" x="40.64" y="54.61" rot="MR0"/>
 <element name="C18" library="resistor" package="C1206K" value="100N" x="30.48" y="54.61" rot="MR180"/>
 <element name="R8" library="resistor" package="M3216" value="22K" x="43.18" y="45.72" rot="MR180"/>
 <element name="C15" library="resistor" package="C1206K" value="100N" x="34.29" y="20.828" rot="MR180"/>
-<element name="C13" library="resistor" package="C1206K" value="100N" x="41.91" y="21.59" rot="R180"/>
-<element name="C16" library="resistor" package="C1206K" value="100N" x="41.91" y="17.78" rot="R180"/>
-<element name="X2" library="crystal" package="HC49/S" value="20MHz" x="22.86" y="53.34" rot="R90">
+<element name="C13" library="resistor" package="C1206K" value="100N" x="41.91" y="21.59" smashed="yes" rot="R180">
+<attribute name="NAME" x="38.557" y="21.125" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="43.51" y="23.69" size="1.016" layer="27" rot="R180"/>
+</element>
+<element name="C16" library="resistor" package="C1206K" value="100N" x="41.91" y="17.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="38.557" y="17.569" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="43.51" y="19.88" size="1.016" layer="27" rot="R180"/>
+</element>
+<element name="X2" library="crystal" package="HC49/S" value="20MHz" x="22.86" y="53.34" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="22.86" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="22.86" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="22.86" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1667008" x="22.86" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="20.193" y="48.26" size="1.778" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="26.797" y="48.26" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C14" library="resistor" package="C1206K" value="100N" x="41.91" y="20.32" rot="MR180"/>
 <element name="R6" library="resistor" package="M3216" value="20K" x="34.29" y="17.78" rot="MR0"/>
-<element name="D5" library="diode" package="SOD-123_MINI-SMA" value="LL4148" x="27.432" y="27.94" rot="R90"/>
-<element name="D3" library="diode" package="SOD-123_MINI-SMA" value="LL4148" x="24.638" y="27.94" rot="R90"/>
-<element name="R9" library="resistor" package="M3216" value="330" x="29.337" y="21.971"/>
-<element name="LED" library="led" package="LED5MM" value="TX_RX" x="14.224" y="75.946" rot="R270"/>
+<element name="D5" library="diode" package="SOD-123_MINI-SMA" value="LL4148" x="27.432" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.781" y="34.544" size="1.778" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="29.845" y="24.892" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="D3" library="diode" package="SOD-123_MINI-SMA" value="LL4148" x="24.638" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.606" y="26.543" size="1.778" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="27.051" y="24.892" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R9" library="resistor" package="M3216" value="330" x="29.337" y="21.971" smashed="yes">
+<attribute name="NAME" x="27.813" y="18.161" size="1.778" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="28.067" y="19.431" size="1.27" layer="27"/>
+</element>
+<element name="LED" library="led" package="LED5MM" value="TX_RX" x="14.224" y="75.946" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.177" y="75.3364" size="1.778" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="12.4206" y="72.7456" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
 <element name="C7" library="resistor" package="C1206K" value="100N" x="27.94" y="71.12" rot="MR90"/>
 <element name="C6" library="resistor" package="C1206K" value="100N" x="30.48" y="71.12" rot="MR90"/>
 <element name="X1" library="crystal" package="HC49/S" value="20MHz" x="68.58" y="43.18" rot="MR90">
@@ -2723,14 +2802,25 @@ design rules under a new name.</description>
 <element name="R3" library="resistor" package="M3216" value="10K" x="43.18" y="71.12" rot="MR270"/>
 <element name="C21" library="resistor" package="C1206K" value="100N" x="53.086" y="66.929" rot="MR270"/>
 <element name="R4" library="resistor" package="M3216" value="4K7" x="54.102" y="72.517" rot="MR90"/>
-<element name="R5" library="resistor" package="M3216" value="4K7" x="70.993" y="68.961" rot="R90"/>
-<element name="D2" library="led" package="LED5MM" value="SYSTEM" x="78.74" y="5.08"/>
-<element name="R2" library="resistor" package="M3216" value="330" x="78.74" y="10.16" rot="R180"/>
-<element name="S" library="switch-omron" package="B3F-10XX" value="" x="66.04" y="5.08" rot="R180">
+<element name="R5" library="resistor" package="M3216" value="4K7" x="70.993" y="68.961" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.533" y="68.072" size="1.778" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="73.533" y="67.691" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="D2" library="led" package="LED5MM" value="SYSTEM" x="78.74" y="5.08" smashed="yes">
+<attribute name="NAME" x="72.644" y="6.8834" size="1.778" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="81.9404" y="3.2766" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R2" library="resistor" package="M3216" value="330" x="78.74" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="80.391" y="14.605" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="80.01" y="12.7" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="S" library="switch-omron" package="B3F-10XX" value="" x="66.04" y="5.08" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="36M3542" x="66.04" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="66.04" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="66.04" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="66.04" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="74.295" y="3.937" size="1.778" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="69.088" y="10.16" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -4216,6 +4306,150 @@ design rules under a new name.</description>
 <wire x1="62.865" y1="7.366" x2="62.7888" y2="7.3406" width="0.254" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="18,29,a8749753f2737d81"/>
+<approved hash="18,29,45af1e14cd9a9621"/>
+<approved hash="18,29,5d6f0d69d3308336"/>
+<approved hash="18,29,69319d84d73757fa"/>
+<approved hash="18,29,5824eceb54e61373"/>
+<approved hash="18,29,e35fafb2ee735295"/>
+<approved hash="18,29,c1c8ceb24ac92ea8"/>
+<approved hash="18,29,23a3603499c5ecfd"/>
+<approved hash="18,29,9407b7d6c6d702b1"/>
+<approved hash="18,29,a3b9cac1f58b9cf3"/>
+<approved hash="18,29,c1a30d09c44f607d"/>
+<approved hash="18,29,9fced7ddfb494000"/>
+<approved hash="18,29,436ce3a9e2096dcb"/>
+<approved hash="18,29,d55c9fd8ad2e6eb7"/>
+<approved hash="18,29,5cd663b7b8e17fe6"/>
+<approved hash="18,29,5d623729eddf7e6e"/>
+<approved hash="18,29,1dff4eb650be03f7"/>
+<approved hash="18,29,bf9c07e407e6bf9e"/>
+<approved hash="18,29,5bf98cf5952d4221"/>
+<approved hash="18,29,025cd1a16c7fa27d"/>
+<approved hash="18,29,204be23be20b207b"/>
+<approved hash="18,29,2305e175e1292359"/>
+<approved hash="18,29,43c3b51f95737e50"/>
+<approved hash="18,29,50150c41f40c0db2"/>
+<approved hash="18,29,b0c5c81195729e56"/>
+<approved hash="18,29,95f10f3becaf7595"/>
+<approved hash="18,29,7f5a22a08c71a27b"/>
+<approved hash="18,29,8f7d7d13fd130f7d"/>
+<approved hash="18,29,bcea7d4c8e4b404d"/>
+<approved hash="18,29,1636d33020d7eb71"/>
+<approved hash="18,29,05bfc6d9379efeb8"/>
+<approved hash="18,29,6dc4a66256e59ec3"/>
+<approved hash="18,29,1b4dd88b2d8ce58a"/>
+<approved hash="18,29,7d301c6b1c717cfa"/>
+<approved hash="18,29,30e0f9660a21cc67"/>
+<approved hash="18,29,1ef07f6b7f671d08"/>
+<approved hash="18,29,81814ac7bb807286"/>
+<approved hash="18,29,abf370159c925734"/>
+<approved hash="18,29,c7bc04daf19d38bb"/>
+<approved hash="18,29,2fc9ec6f18e8d32e"/>
+<approved hash="18,29,f2e53743c4240e62"/>
+<approved hash="18,29,e7575c91d1b61990"/>
+<approved hash="18,29,9238573ea4f96f5f"/>
+<approved hash="18,29,e9ee2a68daef1529"/>
+<approved hash="18,29,5954629293555b92"/>
+<approved hash="18,29,790ebb48484f8249"/>
+<approved hash="18,29,0e10604b60710e1a"/>
+<approved hash="18,29,438788217586bc80"/>
+<approved hash="18,29,0910698b6943090c"/>
+<approved hash="18,29,c83b113de2fa357c"/>
+<approved hash="18,29,dd521eb4efb32795"/>
+<approved hash="18,29,54dc953a66fda95b"/>
+<approved hash="18,29,e7311918e206bf23"/>
+<approved hash="18,29,1847b74b459391f8"/>
+<approved hash="18,29,b6f0e869e876b63b"/>
+<approved hash="18,29,a010ff89fc72a01f"/>
+<approved hash="18,29,c3109c499d80c309"/>
+<approved hash="18,29,bf30ef69ef60bf09"/>
+<approved hash="18,29,0fbdc783946bcb56"/>
+<approved hash="18,29,4c891fe483fc9ff9"/>
+<approved hash="18,29,75864624bbc486c6"/>
+<approved hash="18,29,7b7d4b7fb07f8bbd"/>
+<approved hash="18,29,debae8b815b82c1a"/>
+<approved hash="18,29,00343016ce96fd34"/>
+<approved hash="18,29,ec71dd7322331171"/>
+<approved hash="18,29,c9c3fa6118e13b03"/>
+<approved hash="18,29,f1a8c20a3fca02c8"/>
+<approved hash="18,29,37ac000efdcec42c"/>
+<approved hash="18,29,a64c976e6c2e574c"/>
+<approved hash="18,29,8bdebc1c429c791e"/>
+<approved hash="18,29,8767b745346577a7"/>
+<approved hash="18,29,9095a2d75fb76215"/>
+<approved hash="18,29,c564f5a60a67c9a4"/>
+<approved hash="18,29,4dd97e1b849bbf39"/>
+<approved hash="18,29,604f516dae2d954f"/>
+<approved hash="18,29,52906cd29192a010"/>
+<approved hash="18,29,b962894076404da2"/>
+<approved hash="18,29,1cbe2ebcd3bce9fe"/>
+<approved hash="18,29,22771375e0d5d377"/>
+<approved hash="18,29,ab8b840979c958cb"/>
+<approved hash="18,29,9cf0f869f8609c09"/>
+<approved hash="18,29,9d10dd8bdd729d19"/>
+<approved hash="18,29,bd10db49db76bd1b"/>
+<approved hash="18,29,be30fc6bfc60be0f"/>
+<approved hash="18,29,8d70e849e9808d39"/>
+<approved hash="18,29,8d30cc0bcc428cf9"/>
+<approved hash="18,29,9e10fb89fc709e19"/>
+<approved hash="18,29,c9a8bb92b982cb88"/>
+<approved hash="18,29,d6e779d17bf0d4f6"/>
+<approved hash="18,29,9ef0df6bdf629909"/>
+<approved hash="18,29,9e10fb89f87e9e0b"/>
+<approved hash="18,29,9ef0df6bdf709d07"/>
+<approved hash="18,29,8c30e969e9728c07"/>
+<approved hash="18,29,8c10cd4bcd7c8c0b"/>
+<approved hash="18,29,8970ec69ed72893f"/>
+<approved hash="18,29,8910c80bc844880b"/>
+<approved hash="18,29,8e10eb89e4408e09"/>
+<approved hash="18,29,8ef0cf6bcf728139"/>
+<approved hash="18,29,b910db49db70b919"/>
+<approved hash="18,29,be30f86bf862be09"/>
+<approved hash="18,29,8110e449e586810b"/>
+<approved hash="18,29,8130c06bc07080ff"/>
+<approved hash="18,29,80f0e469e462800f"/>
+<approved hash="18,29,8110c18bc174811b"/>
+<approved hash="18,29,8830ed69ed7088f9"/>
+<approved hash="18,29,8810c94bc9828809"/>
+<approved hash="18,29,ae9720436b08e83e"/>
+<approved hash="18,29,2a5520076b657431"/>
+<approved hash="18,29,0f74a05a770dcd31"/>
+<approved hash="18,29,4d51a03077618f32"/>
+<approved hash="18,29,a67b21b36b41e00b"/>
+<approved hash="18,29,8b5aa03e6f784922"/>
+<approved hash="18,29,683220276b7f2e38"/>
+<approved hash="18,29,c90fa0206f4c0b0d"/>
+<approved hash="18,29,0778afaa670cc57c"/>
+<approved hash="18,29,ec5c20336b7eb22f"/>
+<approved hash="18,29,4545a3a06708874f"/>
+<approved hash="18,29,e44021a36b0faa4a"/>
+<approved hash="18,29,acf8d759b347417c"/>
+<approved hash="18,29,c496f2e0d96fea35"/>
+<approved hash="18,29,acffd562b35b4761"/>
+<approved hash="18,29,ccaa1bebb86a6a35"/>
+<approved hash="18,29,b11acb55af395d36"/>
+<approved hash="18,29,c4aab0f19f6cea2d"/>
+<approved hash="18,29,d20119a9050c1d15"/>
+<approved hash="18,29,c4a69fd93de4622d"/>
+<approved hash="18,29,d26d1a2905081ae8"/>
+<approved hash="18,29,c4affae5d6e3ea2d"/>
+<approved hash="18,29,a0facb45af194d2e"/>
+<approved hash="18,29,c4abb8e494e0ea25"/>
+<approved hash="18,29,a307cebcaf194f35"/>
+<approved hash="18,29,c4acd9e277ef6a25"/>
+<approved hash="18,29,d6730fed115e074e"/>
+<approved hash="18,29,ccaf34ee1316e235"/>
+<approved hash="18,29,af13d552b3274725"/>
+<approved hash="18,29,c4af97f424707225"/>
+<approved hash="18,29,ce7f11cd094e0555"/>
+<approved hash="18,29,c495d1ff7e6b6a2d"/>
+<approved hash="18,29,a8fbcd70b7395f01"/>
+<approved hash="18,29,ccac55ecf3e5622d"/>
+<approved hash="18,29,acb0c71da30b4920"/>
+<approved hash="18,29,ccab76d752e1e22d"/>
+</errors>
 </board>
 </drawing>
 </eagle>
