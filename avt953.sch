@@ -17286,6 +17286,7 @@ Source: www.kingbright.com</description>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="P+16" library="supply1" deviceset="VCC" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17393,6 +17394,7 @@ Source: www.kingbright.com</description>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 <instance part="P+16" gate="VCC" x="175.26" y="177.8"/>
+<instance part="GND24" gate="1" x="317.5" y="58.42"/>
 </instances>
 <busses>
 <bus name="IN[0..10]">
@@ -17867,6 +17869,11 @@ Source: www.kingbright.com</description>
 <wire x1="266.7" y1="73.66" x2="274.32" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="73.66" x2="274.32" y2="66.04" width="0.1524" layer="91"/>
 <junction x="266.7" y="73.66"/>
+</segment>
+<segment>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="CON2" gate="G$1" pin="5"/>
+<wire x1="317.5" y1="60.96" x2="317.5" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
