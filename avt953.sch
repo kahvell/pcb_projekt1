@@ -17223,8 +17223,8 @@ Source: www.kingbright.com</description>
 <part name="C8" library="resistor" deviceset="C-EU" device="C1206K" value="100n"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4147"/>
-<part name="C1" library="resistor" deviceset="CPOL-EU" device="E5-13" value="100u"/>
-<part name="C3" library="resistor" deviceset="CPOL-EU" device="E5-13" value="220u"/>
+<part name="C1" library="resistor" deviceset="CPOL-EU" device="TT2D5" value="100u"/>
+<part name="C3" library="resistor" deviceset="CPOL-EU" device="TT2D5" value="220u"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C1206K" value="100n"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
@@ -17285,6 +17285,7 @@ Source: www.kingbright.com</description>
 <part name="S" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
+<part name="P+16" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17348,7 +17349,7 @@ Source: www.kingbright.com</description>
 <instance part="GND12" gate="1" x="304.8" y="193.04"/>
 <instance part="C15" gate="G$1" x="297.18" y="187.96"/>
 <instance part="GND13" gate="1" x="200.66" y="139.7"/>
-<instance part="P+6" gate="VCC" x="215.9" y="149.86"/>
+<instance part="P+6" gate="VCC" x="218.44" y="147.32"/>
 <instance part="C13" gate="G$1" x="205.74" y="144.78" rot="R90"/>
 <instance part="C16" gate="G$1" x="238.76" y="144.78" rot="R90"/>
 <instance part="GND14" gate="1" x="231.14" y="139.7"/>
@@ -17391,6 +17392,7 @@ Source: www.kingbright.com</description>
 <instance part="GND23" gate="1" x="274.32" y="63.5"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
+<instance part="P+16" gate="VCC" x="175.26" y="177.8"/>
 </instances>
 <busses>
 <bus name="IN[0..10]">
@@ -17487,8 +17489,7 @@ Source: www.kingbright.com</description>
 <pinref part="US5" gate="G$1" pin="VDD4"/>
 <wire x1="213.36" y1="154.94" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="213.36" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="144.78" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="144.78" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
 <junction x="213.36" y="144.78"/>
 </segment>
 <segment>
@@ -17577,6 +17578,14 @@ Source: www.kingbright.com</description>
 <pinref part="P+15" gate="VCC" pin="VCC"/>
 <wire x1="271.78" y1="50.8" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="50.8" x2="274.32" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+16" gate="VCC" pin="VCC"/>
+<wire x1="175.26" y1="175.26" x2="175.26" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="172.72" x2="180.34" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="172.72" x2="180.34" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="US5" gate="G$1" pin="VDD3"/>
+<wire x1="180.34" y1="177.8" x2="182.88" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -18581,6 +18590,23 @@ Source: www.kingbright.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,203.2,233.68,US5,GND2,GND,,,"/>
+<approved hash="104,1,182.88,185.42,US5,GND3,GND,,,"/>
+<approved hash="104,1,200.66,154.94,US5,GND4,GND,,,"/>
+<approved hash="104,1,287.02,175.26,US5,GND5,GND,,,"/>
+<approved hash="104,1,287.02,182.88,US5,GND6,GND,,,"/>
+<approved hash="104,1,259.08,233.68,US5,VDD,VCC,,,"/>
+<approved hash="104,1,231.14,233.68,US5,VDD2,VCC,,,"/>
+<approved hash="104,1,182.88,177.8,US5,VDD3,VCC,,,"/>
+<approved hash="104,1,213.36,154.94,US5,VDD4,VCC,,,"/>
+<approved hash="104,1,246.38,154.94,US5,VDD5,VCC,,,"/>
+<approved hash="104,1,287.02,190.5,US5,VDD6,VCC,,,"/>
+<approved hash="113,1,31.0727,258.056,CON1,,,,,"/>
+<approved hash="113,1,325.12,75.0881,CON2,,,,,"/>
+<approved hash="113,1,259.08,75.8105,S,,,,,"/>
+<approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
