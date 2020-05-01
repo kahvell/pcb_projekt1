@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/Tester/Desktop/pcb_projekt1.git/avt953.brd
 
-Start at      : 11:30:48 (01.05.2020)
-End at        : 11:30:53 (01.05.2020)
-Elapsed time  : 00:00:04
+Start at      : 11:51:56 (01.05.2020)
+End at        : 11:52:09 (01.05.2020)
+Elapsed time  : 00:00:13
 
-Signals       :    70   RoutingGrid: 25 mil  Layers: 2
+Signals       :    70   RoutingGrid: 5 mil  Layers: 2
 Connections   :   179   predefined:  0 ( 0 Vias )
 
-Router memory :   93800
+Router memory :   2168320
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route
 
-Time per pass     :  00:00:00  00:00:01  00:00:01  00:00:00  00:00:01  00:00:01
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         1         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:13
+Number of Ripups  :         5
+max. Level        :         1
+max. Total        :        31
 
-Routed            :        17       130       130       130       130       130
-Vias              :         0       115        34        26        22        24
-Resolution        :     9.5 %    72.6 %    72.6 %    72.6 %    72.6 %    72.6 %
+Routed            :       179
+Vias              :        83
+Resolution        :   100.0 %
 
-Final             : 72.6% finished
+Final             : 100.0% finished
